@@ -1,0 +1,17 @@
+.paragraph-image-block{
+    .image-container{
+        img{
+            height: 100%;
+            object-fit: cover;
+            object-position: top;
+            width: 100%;
+        }
+    }
+    .paragraph-container{
+        background-color: $grey-l2;
+        padding: 42px 43px;
+        @include media-breakpoint-down(md){
+            padding: 37px 26px;
+        }
+    }
+}

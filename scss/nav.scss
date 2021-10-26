@@ -1,0 +1,29 @@
+.nav{
+    height: 97px;
+    @include media-breakpoint-down(md){
+        height: 50px;
+    }
+    li{
+        >div{
+            color: $green;
+            font-family: 'Trebuchet';
+            &.phone{
+                font-size: 22px;
+                @include media-breakpoint-down(md){
+                    font-size: 20px;
+                }
+            }
+            &.opening-hrs{
+                font-size: 14px;
+            }
+        }
+        .navbar-brand{
+            @include media-breakpoint-down(md){
+                svg{
+                    margin-left: 16px;
+                    width: 80px;
+                }
+            }
+        }
+    }
+}

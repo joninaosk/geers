@@ -1,5 +1,14 @@
 {
+  "name": "geers",
+  "scripts": {
+    "build-css": "node-sass --include-path scss scss/main.scss assets/css/main.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+   },
   "dependencies": {
     "bootstrap": "^5.1.3"
+  },
+  "devDependencies": {
+    "node-sass": "^6.0.1",
+    "nodemon": "^2.0.14"
   }
 }

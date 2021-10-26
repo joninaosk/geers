@@ -1,0 +1,45 @@
+footer{
+    >.container-fluid{
+        position: relative;
+    }
+    .row{
+        .footer-image{
+            img{
+                object-fit: cover;
+                width: 100%;
+                @include media-breakpoint-down(lg){
+                    min-height: 360px;
+                }
+            }
+        }
+        .text-container{
+            color: $white;
+            margin-top: 100px;
+            position: absolute;
+            @include media-breakpoint-down(lg){
+                margin-top: 20px;
+                img{
+                    object-fit: cover;
+                    height: 48px;
+                    width: 56px;
+                }
+            }
+        }
+    }
+    .rights{
+        background-color: $grey-d1;
+        bottom: 0;
+        height: 100px;
+        position: absolute;
+        @include media-breakpoint-down(lg){
+            position: relative;
+            width: auto !important;
+        }
+        p{
+            color: $white;
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 20px;
+        }
+    }
+}

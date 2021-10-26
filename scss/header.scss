@@ -1,0 +1,41 @@
+.header{
+    margin-bottom: 60px;
+    position: relative;
+    img.header-bg{
+        height: auto;
+        max-height: 500px;
+        object-fit: cover;
+        width: 100%;
+        @include media-breakpoint-down(md){
+            object-position: left;
+            min-height: 200px;
+        }
+    }
+    .text-container{
+        background-color: $white;
+        border: 1px solid $grey-l1;
+        font-family: Arial;
+        font-size: 30px;
+        font-weight: 700;
+        height: 80%;
+        right: 140px;
+        top: 10%;
+        padding: 43px 50px;
+        position: absolute;
+        @include media-breakpoint-down(lg){
+            border: none;
+            height: auto;
+            right: unset;
+            top: unset;
+            padding: 30px 20px;
+            position: relative;
+        }
+        .btn-primary{
+            margin-bottom: 50px;
+            width: 100%;
+        }
+        img.rating-logos{
+            width: 100%;
+        }
+    }
+}

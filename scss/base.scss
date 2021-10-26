@@ -1,0 +1,59 @@
+html {
+    font-size: 62.5%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+  
+body{
+    font-family: "Arial";
+}
+
+.btn-primary{
+    background-color: $green;
+    border: none;
+    border-radius: 4px;
+    color: $white;
+    font-size: 20px;
+    height: 56px;
+    &:active, &:focus{
+        border: none;
+        box-shadow: none;
+        outline: none;
+    }
+    @include media-breakpoint-down(lg){
+        max-width: 320px !important;
+        width: 320px !important;
+    }
+}
+
+.mb-100{
+    margin-bottom: 100px;
+}
+
+p, li{
+    font-size: 18px;
+    line-height: 29px;
+}
+
+h1{
+    font-size: calc(24px + (30 - 24) * ((100vw - 414px) / (1920 - 414)));
+    font-weight: 700;
+    line-height: calc(39px + (48 - 39) * ((100vw - 414px) / (1920 - 414)));
+    margin-bottom: 40px;
+}
+
+h2{
+    font-size: calc(22px + (28 - 22) * ((100vw - 414px) / (1920 - 414)));
+    font-weight: 700;
+    line-height: calc(38px + (45 - 38) * ((100vw - 414px) / (1920 - 414)));
+    margin-bottom: 40px;
+}
+
+h3{
+    font-size: calc(20px + (26 - 20) * ((100vw - 414px) / (1920 - 414)));
+    font-weight: 700;
+    line-height: calc(34px + (42 - 34) * ((100vw - 414px) / (1920 - 414)));
+    margin-bottom: 40px;
+}
+
+
